@@ -1,3 +1,69 @@
     1  docker run hello-world
     2  hisrory >> history.txt
     3  history >> history.txt
+    1  sudo yum install -y docker
+    2  sudo service docker start
+    3  sudo docker info
+    4  git --vesion
+    5  yum install git
+    6  sudo yum install git
+    7  git --vesion
+    8  git config --global user.name "Gowdhamraman"
+    9  git config --global user.email "gowdham93@gmail.com"
+   10  git clone https://github.com/Gowdhamraman/githubtest.git
+   11  ls
+   12  cd githubtest/
+   13  ls
+   14  mkdir new
+   15  cd new
+   16  touch new1
+   17  cd..
+   18  cd ..
+   19  git add .
+   20  git status 
+   21   git push orgin main
+   22  git commit -m "new folder added"
+   23   git push orgin main
+   24  git clone https://github.com/Gowdhamraman/Git-test
+   25  ls
+   26  cd  Git-test/
+   27  ls
+   28  git push origin main
+   29  ls
+   30  rm 7.txt 8.txt 
+   31  ls
+   32  git status 
+   33  git add 
+   34  git add .
+   35  git commit -m "2 files deleted"
+   36  git push origin main
+   37  ls
+   38  df -h
+   39  free -m
+   40  nano cpumoni.sh
+   41  cat cpumoni.sh 
+   42  nano cpumoni.sh
+   43  cat cpumoni.sh 
+   44  nano cpumoni.sh
+   45  chmod +x cpumoni.sh 
+   46  ls
+   47  ./cpumoni.sh 
+   48  nano cpumoni.sh
+   49  ./cpumoni.sh 
+   50  sudo yum install openssh-server
+   51  sudo yum list installed
+   52  sudo yum update -y
+   53  sudo amazon-linux-extras install docker -y
+   54  sudo usermod -a -G docker ec2-user
+   55  sudo systemctl enable docker
+   56  sudo service docker start
+   57  docker
+   58  docker run hello-world
+   59  docker version
+   60  sudo service docker status
+   61  df -h
+   62   sudo usermod -aG docker ec2-user
+   63  udo docker version
+   64  sudo docker version
+   65  newgrp docker
+   66  history >> history.txt
