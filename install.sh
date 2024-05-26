@@ -9,9 +9,6 @@ sudo yum install -y git
 # Install Docker prerequisites
 sudo yum install -y docker
 
-# Add Docker repository
-sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-
 # Start Docker service
 sudo systemctl start docker
 
