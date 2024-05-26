@@ -1,0 +1,11 @@
+[ec2-user@ip-172-31-20-120 Bash]$ ll
+total 8
+-rwxr-xr-x. 1 ec2-user ec2-user 403 May 26 09:10 guvi200.sh
+-rwxr-xr-x. 1 ec2-user ec2-user 403 May 26 09:10 guvi301.sh
+[ec2-user@ip-172-31-20-120 Bash]$ ./guvi200.sh 
+HTTP status code: 301
+Failure: The request failed with status code 301.
+[ec2-user@ip-172-31-20-120 Bash]$ ./guvi301.sh 
+HTTP status code: 301
+Success: The request was successful.
+
