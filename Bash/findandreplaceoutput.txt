@@ -1,0 +1,29 @@
+[ec2-user@ip-172-31-20-120 Bash]$ cat new.txt 
+welcome give give
+welcome give give
+welcome give give
+welcome give give
+welcome give give
+welcome give give
+welcome give give
+welcome give give
+dfdsgfd
+welcome give give
+welcome give give
+end
+[ec2-user@ip-172-31-20-120 Bash]$ ./words.sh new.txt 
+Replacement completed successfully.
+[ec2-user@ip-172-31-20-120 Bash]$ cat new.txt 
+welcome give give
+welcome give give
+welcome give give
+welcome give give
+welcome learning learning
+welcome learning learning
+welcome learning learning
+welcome learning learning
+dfdsgfd
+welcome learning learning
+welcome learning learning
+end
+
