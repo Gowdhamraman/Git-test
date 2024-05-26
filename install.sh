@@ -1,18 +1,18 @@
 #!/bin/bash
 
-# Update the package index
+# Update the packages
 sudo yum update -y
 
 # Install Git
 sudo yum install -y git
 
-# Install Docker prerequisites
+# Install Docker 
 sudo yum install -y docker
 
 # Start Docker service
 sudo systemctl start docker
 
-# Enable Docker service to start on boot
+# Enable Docker service 
 sudo systemctl enable docker
 
 # Configure Git user settings
