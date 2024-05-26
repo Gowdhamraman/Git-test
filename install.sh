@@ -7,13 +7,10 @@ sudo yum update -y
 sudo yum install -y git
 
 # Install Docker prerequisites
-sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sudo yum install -y docker
 
 # Add Docker repository
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-
-# Install Docker
-sudo yum install -y docker-ce docker-ce-cli containerd.io
 
 # Start Docker service
 sudo systemctl start docker
@@ -29,4 +26,4 @@ git config --global user.email "gowdham93@gmail.com"
 git clone https://github.com/Gowdhamraman/Git-test.git
 
 # List files in the cloned repository
-ls Git-tese
+ls Git-test
