@@ -14,7 +14,7 @@ RUN yum -y update && \
 COPY index.html /var/www/html/index.html
 
 # Expose port 80 to the host
-EXPOSE 8000
+EXPOSE 80
 
 # Set the entry point for the container to run Apache in the foreground
 #ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
