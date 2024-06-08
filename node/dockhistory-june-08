@@ -56,3 +56,159 @@
    56  ls
    57  history
    58  history >>dockhistory-june-08
+    1  docker version
+    2  docker run hello-world
+    3  ls
+    4  git clone https://github.com/Gowdhamraman/Git-test.git
+    5  ls
+    6  cd Git-test/
+    7  ls
+    8  checkout 
+    9  git init
+   10  checkout -b docker
+   11  branch
+   12  git config --global user.name "Gowdhamraman"
+   13  git config --global user.email "gowdham93@gmail.com"
+   14  git clone https://github.com/Gowdhamraman/Git-test.git
+   15  ls
+   16  git branch 
+   17  git checkout -b docker
+   18  ls
+   19  mkdir  docker
+   20  cd docker/
+   21  git pull origin docker
+   22  git clone -b docker --single-branch https://github.com/Gowdhamraman/Git-test.git
+   23  ls
+   24  rm Git-test/
+   25  cd Git-test/
+   26  ls
+   27  docker build -t my-apache .
+   28  docker run -d -p 80:80 --name my-apache-container my-apache
+   29  docker ps
+   30  docker image ls
+   31  docker ps
+   32  ls
+   33  mkdir nginx
+   34  cd nginx/
+   35  vi Dockerfile
+   36  vi index.html
+   37  ls
+   38  docker build -t my-details-website .
+   39  docker run -d -p 80:80 my-details-website
+   40  docker run -d -p 8000:8000 my-details-website1
+   41  vi Dockerfile 
+   42  docker build -t my-details1 .
+   43  docker run -d -p 8000:80 my-details1
+   44  docker images
+   45  docker ps
+   46  docker logs 16
+   47  ls
+   48  cd ..
+   49  git add .
+   50  git status 
+   51  git commit -m "nginx website updated"
+   52  git push origin docker
+   53  ls
+   54  cd no
+   55  cd node/
+   56  ls
+   57  history
+   58  history >>dockhistory-june-08
+   59  git add .
+   60  git commit -m "docker history"
+   61  git status 
+   62  git push origin docker
+   63  ls
+   64  cd ..
+   65  ls
+   66  vi index.html 
+   67  cat index.html 
+   68  vi index.html 
+   69  service httpd restart
+   70  yum list installed
+   71  systemctl restart httpd
+   72  nginx -t
+   73  docker ps
+   74  docker restart 97
+   75  docker run -d -p 80:80 v $(pwd)/index.html:/var/www/html/index.html --name my-apache-container my-apache
+   76  docker run -d -p 80:80 -v $(pwd)/index.html:/var/www/html/index.html --name my-apache-container my-apache
+   77  docker run -d -p 80:80 -v $(pwd)/index.html:/var/www/html/index.html --name my-apache-container1 my-apache
+   78  dokcer ps
+   79  docker ps
+   80  docker ps -a
+   81  docker image history
+   82  docker image ls
+   83  docker image history 7e
+   84  mkdir wordpress
+   85  wget wordpress.org/latest.tar.gz
+   86  ls
+   87  mv latest.tar.gz wordpress/
+   88  ls
+   89  cd wordpress/
+   90  docker import wordpress .
+   91  wget alphine-rootfs.tar.gz
+   92  docker image import latest.tar.gz wordpress:latest
+   93  docker run -it wordpress:latest /bin/sh
+   94  cd ..
+   95  ls
+   96  docker imae ls
+   97  docker image ls
+   98  docker ps
+   99  docker stop 97
+  100  docker rm 97
+  101  ls
+  102  docker rmi 7e
+  103  docker rm 78
+  104  docker stop 78
+  105  docker ps -a
+  106  docker stop 780 78a
+  107  docker rm 780 78a
+  108  docker rmi 7e
+  109  docker image ls
+  110  docker build -t my-apache .
+  111  docker run -d -p 80:80 -v $(pwd)/index.html:/var/www/html/index.html --name my-apache-container my-apache
+  112  docker ps
+  113  vi index.html 
+  114  docker restart 7d
+  115  vi index.html 
+  116  docker restart 7d
+  117  vi index.html 
+  118  docker restart 7d
+  119  cd nginx/
+  120  vi index.html 
+  121  docker ps
+  122  docker image ls
+  123  docker stop 16
+  124  docker rm 16
+  125  docker rmi e1 3b
+  126  docker stop 7a
+  127  docker rm 7a
+  128  docker rmi e1 3b
+  129  cat Dockerfile 
+  130  docker build -t my-details1 .
+  131  docker run -d -p 8000:80 -v $(pwd)/index.html:/usr/share/nginx/html/index.html --name  my-details1 my-nginx-site
+  132  docker run -d -p 8000:80 -v $(pwd)/index.html:/usr/share/nginx/html/index.html --name my-nginx-container my-nginx-site
+  133  docker ps -a
+  134  docker image ls
+  135  docker rmi 02
+  136  ls
+  137  docker run -d -p 8000:80 -v $(pwd)/index.html:/usr/share/nginx/html/index.html --name my-nginx-container my-nginx-site
+  138  cat Dockerfile 
+  139  vi Dockerfile 
+  140  clear
+  141  cd ..
+  142  ls
+  143  docker ps
+  144  cd nginx/
+  145  ls
+  146  cat Dockerfile 
+  147  docker build -t my-basic-website .
+  148  docker run -d -p 8000:80 -v $(pwd)/index.html:/usr/share/nginx/html/index.html my-basic-website
+  149  cd ..
+  150  git add .
+  151  git commit -m "nginx code update"
+  152  git status
+  153  git push origin docker
+  154  history
+  155  cd node/
+  156  history >>dockhistory-june-08
