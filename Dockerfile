@@ -17,5 +17,5 @@ COPY index.html /var/www/html/index.html
 EXPOSE 80
 
 # Set the entry point for the container to run Apache in the foreground
-#ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
