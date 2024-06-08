@@ -1,0 +1,58 @@
+    1  docker version
+    2  docker run hello-world
+    3  ls
+    4  git clone https://github.com/Gowdhamraman/Git-test.git
+    5  ls
+    6  cd Git-test/
+    7  ls
+    8  checkout 
+    9  git init
+   10  checkout -b docker
+   11  branch
+   12  git config --global user.name "Gowdhamraman"
+   13  git config --global user.email "gowdham93@gmail.com"
+   14  git clone https://github.com/Gowdhamraman/Git-test.git
+   15  ls
+   16  git branch 
+   17  git checkout -b docker
+   18  ls
+   19  mkdir  docker
+   20  cd docker/
+   21  git pull origin docker
+   22  git clone -b docker --single-branch https://github.com/Gowdhamraman/Git-test.git
+   23  ls
+   24  rm Git-test/
+   25  cd Git-test/
+   26  ls
+   27  docker build -t my-apache .
+   28  docker run -d -p 80:80 --name my-apache-container my-apache
+   29  docker ps
+   30  docker image ls
+   31  docker ps
+   32  ls
+   33  mkdir nginx
+   34  cd nginx/
+   35  vi Dockerfile
+   36  vi index.html
+   37  ls
+   38  docker build -t my-details-website .
+   39  docker run -d -p 80:80 my-details-website
+   40  docker run -d -p 8000:8000 my-details-website1
+   41  vi Dockerfile 
+   42  docker build -t my-details1 .
+   43  docker run -d -p 8000:80 my-details1
+   44  docker images
+   45  docker ps
+   46  docker logs 16
+   47  ls
+   48  cd ..
+   49  git add .
+   50  git status 
+   51  git commit -m "nginx website updated"
+   52  git push origin docker
+   53  ls
+   54  cd no
+   55  cd node/
+   56  ls
+   57  history
+   58  history >>dockhistory-june-08
