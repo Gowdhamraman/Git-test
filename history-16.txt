@@ -1,0 +1,76 @@
+    1  vi install.sh
+    2  chmod +x install.sh 
+    3  ./install.sh 
+    4  cd Git-test/
+    5  ls
+    6  cd Bash/
+    7  ls
+    8  cd ..
+    9  ls -al
+   10  cd .git/
+   11  ls
+   12  cd branches/
+   13  ls
+   14  cd ..
+   15  git fetch --all
+   16  ll
+   17  cd ..
+   18  git fetch --all
+   19  git checkout docker
+   20  cd Git-test/
+   21  git checkout docker
+   22  git pull origin docker
+   23  ll
+   24  ls
+   25  docker build -t my-apache .
+   26  lsblk
+   27  docker run -d -p 80:80 --name my-apache-container my-apache
+   28  systemctl status httpd
+   29  sudo yum install -y httpd
+   30  sudo systemctl start httpd
+   31  docker ps
+   32  docker image ls
+   33  docker rmi f9
+   34  docker rm 
+   35  docker rm 04
+   36  docker rmi f9
+   37  docker stop 04
+   38  docker rm 04
+   39  docker rmi f9
+   40  sudo systemctl start httpd
+   41  sudo systemctl enable  httpd
+   42  systemctl status httpd
+   43  cd /var/www/html/
+   44  ls
+   45  cd ..
+   46  ls
+   47  cd html/
+   48  ls
+   49  vi index.html
+   50  cd ../...
+   51  cd 
+   52  mkfs -t ext4 /dev/xvdf
+   53  sudo mkfs -t ext4 /dev/xvdf
+   54  lsblk
+   55  df -h
+   56  lsblk
+   57  mkfs -t ext4 /dev/xvdbb
+   58  lsblk
+   59  mkdir /home/project
+   60  mount /dev/svdbb /home/project/
+   61  mount /dev/xvdbb /home/project/
+   62  lsblk
+   63  df -h
+   64  ll
+   65  cp -r * /home/project/
+   66  cd /home/project/
+   67  ls
+   68  df -h
+   69  lsblk
+   70  df -h
+   71  mkfs -t ext4 /dev/xvdb
+   72  lsblk
+   73  mkdir /home/project2
+   74  mount /dev/xvdb /home/project2
+   75  df -h
+   76  history >> history-16.txt
