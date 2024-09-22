@@ -1,0 +1,94 @@
+[ec2-user@ip-172-31-46-143 ~]$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        4.0M     0  4.0M   0% /dev
+tmpfs           475M     0  475M   0% /dev/shm
+tmpfs           190M  464K  190M   1% /run
+/dev/xvda1      8.0G  2.2G  5.8G  28% /
+tmpfs           475M     0  475M   0% /tmp
+/dev/xvda128     10M  1.3M  8.7M  13% /boot/efi
+tmpfs            95M     0   95M   0% /run/user/1000
+[ec2-user@ip-172-31-46-143 ~]$ sudo yum update
+Killed
+[ec2-user@ip-172-31-46-143 ~]$ sudo -i
+[root@ip-172-31-46-143 ~]# yum update
+Killed
+[root@ip-172-31-46-143 ~]# free -m
+               total        used        free      shared  buff/cache   available
+Mem:             949         172         707           0          69         672
+Swap:              0           0           0
+[root@ip-172-31-46-143 ~]# yum clean all
+22 files removed
+[root@ip-172-31-46-143 ~]# yum update -y
+Amazon Linux 2023 repository                                                                                                                                            46 MB/s |  28 MB     00:00    
+Amazon Linux 2023 Kernel Livepatch repository                                                                                                                           61 kB/s |  11 kB     00:00    
+grafana                                                                                                                                                                 48 MB/s | 120 MB     00:02    
+Killed
+[root@ip-172-31-46-143 ~]# fallocate -l 1G /swapfile
+[root@ip-172-31-46-143 ~]# chmod 600 /swapfile
+[root@ip-172-31-46-143 ~]# mkswap /swapfile
+Setting up swapspace version 1, size = 1024 MiB (1073737728 bytes)
+no label, UUID=1694df4d-b667-4dfd-b90c-3d55e735327d
+[root@ip-172-31-46-143 ~]# swapon /swapfile
+[root@ip-172-31-46-143 ~]# yum install grafana
+Last metadata expiration check: 0:01:29 ago on Sun Sep 22 07:04:54 2024.
+Dependencies resolved.
+=======================================================================================================================================================================================================
+ Package                                         Architecture                                   Version                                          Repository                                       Size
+=======================================================================================================================================================================================================
+Installing:
+ grafana                                         x86_64                                         11.2.0-1                                         grafana                                         116 M
+
+Transaction Summary
+=======================================================================================================================================================================================================
+Install  1 Package
+
+Total download size: 116 M
+Installed size: 442 M
+Is this ok [y/N]: y
+Downloading Packages:
+grafana-11.2.0-1.x86_64.rpm                                                                                                                                             59 MB/s | 116 MB     00:01    
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                                                                   58 MB/s | 116 MB     00:02     
+grafana                                                                                                                                                                 77 kB/s | 2.4 kB     00:00    
+Importing GPG key 0x10458545:
+ Userid     : "Grafana Labs <engineering@grafana.com>"
+ Fingerprint: B53A E77B ADB6 30A6 8304 6005 963F A277 1045 8545
+ From       : https://packages.grafana.com/gpg.key
+Is this ok [y/N]: y
+Key imported successfully
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                                                                                                               1/1 
+  Installing       : grafana-11.2.0-1.x86_64                                                                                                                                                       1/1 
+  Running scriptlet: grafana-11.2.0-1.x86_64                                                                                                                                                       1/1 
+### NOT starting on installation, please execute the following statements to configure grafana to start automatically using systemd
+ sudo /bin/systemctl daemon-reload
+ sudo /bin/systemctl enable grafana-server.service
+### You can start grafana-server by executing
+ sudo /bin/systemctl start grafana-server.service
+
+POSTTRANS: Running script
+
+  Verifying        : grafana-11.2.0-1.x86_64                                                                                                                                                       1/1 
+
+Installed:
+  grafana-11.2.0-1.x86_64                                                                                                                                                                              
+
+Complete!
+[root@ip-172-31-46-143 ~]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        4.0M     0  4.0M   0% /dev
+tmpfs           475M     0  475M   0% /dev/shm
+tmpfs           190M  460K  190M   1% /run
+/dev/xvda1      8.0G  3.8G  4.2G  48% /
+tmpfs           475M     0  475M   0% /tmp
+/dev/xvda128     10M  1.3M  8.7M  13% /boot/efi
+tmpfs            95M     0   95M   0% /run/user/1000
+[root@ip-172-31-46-143 ~]# free -m
+               total        used        free      shared  buff/cache   available
+Mem:             949         140         252           0         556         666
+Swap:           1023          38         985
+[root@ip-172-31-46-143 ~]# 
