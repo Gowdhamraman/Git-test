@@ -1,0 +1,42 @@
+Log file created at: 2024/09/28 04:53:29
+Running on machine: ip-172-31-85-141
+Binary: Built with gc go1.22.5 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0928 04:53:29.562523   28621 out.go:345] Setting OutFile to fd 1 ...
+I0928 04:53:29.562726   28621 out.go:392] TERM=xterm,COLORTERM=, which probably does not support color
+I0928 04:53:29.562730   28621 out.go:358] Setting ErrFile to fd 2...
+I0928 04:53:29.562734   28621 out.go:392] TERM=xterm,COLORTERM=, which probably does not support color
+I0928 04:53:29.562946   28621 root.go:338] Updating PATH: /root/.minikube/bin
+W0928 04:53:29.563045   28621 root.go:314] Error reading config file at /root/.minikube/config/config.json: open /root/.minikube/config/config.json: no such file or directory
+I0928 04:53:29.563318   28621 out.go:352] Setting JSON to false
+I0928 04:53:29.564309   28621 start.go:129] hostinfo: {"hostname":"ip-172-31-85-141.ec2.internal","uptime":952,"bootTime":1727498258,"procs":106,"os":"linux","platform":"amazon","platformFamily":"rhel","platformVersion":"2023.5.20240916","kernelVersion":"6.1.109-118.189.amzn2023.x86_64","kernelArch":"x86_64","virtualizationSystem":"xen","virtualizationRole":"guest","hostId":"ec221ec7-8ce5-cb94-75f5-cf63007b8915"}
+I0928 04:53:29.564366   28621 start.go:139] virtualization: xen guest
+I0928 04:53:29.566718   28621 out.go:177] * minikube v1.34.0 on Amazon 2023.5.20240916 (xen/amd64)
+I0928 04:53:29.568387   28621 driver.go:394] Setting default libvirt URI to qemu:///system
+I0928 04:53:29.568405   28621 global.go:112] Querying for installed drivers using PATH=/root/.minikube/bin:/root/.local/bin:/root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/bin
+W0928 04:53:29.568942   28621 preload.go:293] Failed to list preload files: open /root/.minikube/cache/preloaded-tarball: no such file or directory
+I0928 04:53:29.568960   28621 notify.go:220] Checking for updates...
+I0928 04:53:29.700384   28621 docker.go:123] docker version: linux-25.0.6:
+I0928 04:53:29.700480   28621 cli_runner.go:164] Run: docker system info --format "{{json .}}"
+I0928 04:53:30.095435   28621 info.go:266] docker info: {ID:ee94bc80-2f68-4848-86d7-14b5f445a151 Containers:0 ContainersRunning:0 ContainersPaused:0 ContainersStopped:0 Images:0 Driver:overlay2 DriverStatus:[[Backing Filesystem xfs] [Supports d_type true] [Using metacopy false] [Native Overlay Diff true] [userxattr false]] SystemStatus:<nil> Plugins:{Volume:[local] Network:[bridge host ipvlan macvlan null overlay] Authorization:<nil> Log:[awslogs fluentd gcplogs gelf journald json-file local splunk syslog]} MemoryLimit:true SwapLimit:true KernelMemory:false KernelMemoryTCP:false CPUCfsPeriod:true CPUCfsQuota:true CPUShares:true CPUSet:true PidsLimit:true IPv4Forwarding:true BridgeNfIptables:true BridgeNfIP6Tables:true Debug:false NFd:23 OomKillDisable:false NGoroutines:40 SystemTime:2024-09-28 04:53:30.07811974 +0000 UTC LoggingDriver:json-file CgroupDriver:systemd NEventsListener:0 KernelVersion:6.1.109-118.189.amzn2023.x86_64 OperatingSystem:Amazon Linux 2023.5.20240916 OSType:linux Architecture:x86_64 IndexServerAddress:https://index.docker.io/v1/ RegistryConfig:{AllowNondistributableArtifactsCIDRs:[] AllowNondistributableArtifactsHostnames:[] InsecureRegistryCIDRs:[127.0.0.0/8] IndexConfigs:{DockerIo:{Name:docker.io Mirrors:[] Secure:true Official:true}} Mirrors:[]} NCPU:1 MemTotal:995610624 GenericResources:<nil> DockerRootDir:/var/lib/docker HTTPProxy: HTTPSProxy: NoProxy: Name:ip-172-31-85-141.ec2.internal Labels:[] ExperimentalBuild:false ServerVersion:25.0.6 ClusterStore: ClusterAdvertise: Runtimes:{Runc:{Path:runc}} DefaultRuntime:runc Swarm:{NodeID: NodeAddr: LocalNodeState:inactive ControlAvailable:false Error: RemoteManagers:<nil>} LiveRestoreEnabled:false Isolation: InitBinary:docker-init ContainerdCommit:{ID:8fc6bcff51318944179630522a095cc9dbf9f353 Expected:8fc6bcff51318944179630522a095cc9dbf9f353} RuncCommit:{ID:58aa9203c123022138b22cf96540c284876a7910 Expected:58aa9203c123022138b22cf96540c284876a7910} InitCommit:{ID:de40ad0 Expected:de40ad0} SecurityOptions:[name=seccomp,profile=builtin name=cgroupns] ProductLicense: Warnings:<nil> ServerErrors:[] ClientInfo:{Debug:false Plugins:[map[Name:buildx Path:/usr/libexec/docker/cli-plugins/docker-buildx SchemaVersion:0.1.0 ShortDescription:Docker Buildx Vendor:Docker Inc. Version:v0.0.0+unknown]] Warnings:<nil>}}
+I0928 04:53:30.095501   28621 docker.go:318] overlay module found
+I0928 04:53:30.095515   28621 global.go:133] docker default: true priority: 9, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0928 04:53:30.095730   28621 global.go:133] none default: false priority: 4, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0928 04:53:30.095762   28621 global.go:133] podman default: true priority: 7, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "podman": executable file not found in $PATH Reason: Fix:Install Podman Doc:https://minikube.sigs.k8s.io/docs/drivers/podman/ Version:}
+I0928 04:53:30.095773   28621 global.go:133] ssh default: false priority: 4, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0928 04:53:30.095811   28621 global.go:133] kvm2 default: true priority: 8, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "virsh": executable file not found in $PATH Reason: Fix:Install libvirt Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/kvm2/ Version:}
+I0928 04:53:30.095838   28621 global.go:133] qemu2 default: true priority: 7, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "qemu-system-x86_64": executable file not found in $PATH Reason: Fix:Install qemu-system Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/qemu/ Version:}
+I0928 04:53:30.095882   28621 global.go:133] virtualbox default: true priority: 6, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:unable to find VBoxManage in $PATH Reason: Fix:Install VirtualBox Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/virtualbox/ Version:}
+I0928 04:53:30.095905   28621 global.go:133] vmware default: false priority: 5, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "vmrun": executable file not found in $PATH Reason: Fix:Install vmrun Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/vmware/ Version:}
+I0928 04:53:30.095916   28621 driver.go:316] not recommending "none" due to default: false
+I0928 04:53:30.095919   28621 driver.go:316] not recommending "ssh" due to default: false
+I0928 04:53:30.095928   28621 driver.go:351] Picked: docker
+I0928 04:53:30.095933   28621 driver.go:352] Alternatives: [none ssh]
+I0928 04:53:30.095941   28621 driver.go:353] Rejects: [podman kvm2 qemu2 virtualbox vmware]
+I0928 04:53:30.097527   28621 out.go:177] * Automatically selected the docker driver. Other choices: none, ssh
+I0928 04:53:30.099292   28621 start.go:297] selected driver: docker
+I0928 04:53:30.099299   28621 start.go:901] validating driver "docker" against <nil>
+I0928 04:53:30.099307   28621 start.go:912] status for docker: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0928 04:53:30.100581   28621 out.go:201] 
+W0928 04:53:30.102620   28621 out.go:270] X Exiting due to RSRC_INSUFFICIENT_CORES:  has less than 2 CPUs available, but Kubernetes requires at least 2 to be available
+I0928 04:53:30.104490   28621 out.go:201] 

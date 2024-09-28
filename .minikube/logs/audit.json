@@ -1,0 +1,1 @@
+{"specversion":"1.0","id":"e874ef1d-96ed-4152-a897-42c1f2f0b600","source":"https://minikube.sigs.k8s.io/","type":"io.k8s.sigs.minikube.audit","datacontenttype":"application/json","data":{"args":"","command":"start","endTime":"","id":"7be5dedd-a0dc-4a25-9a7e-b1d40f299c71","profile":"minikube","startTime":"28 Sep 24 04:53 UTC","user":"root","version":"v1.34.0"}}

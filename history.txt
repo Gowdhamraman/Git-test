@@ -1,0 +1,50 @@
+    1  minikube start
+    2  sudo yum update -y
+    3   wget https://github.com/prometheus/prometheus/releases/download/v2.24.0/prometheus-2.24.0.linux-amd64.tar.gz
+    4  tar -xvf prometheus-2.24.0.linux-amd64.tar.gz
+    5  mv prometheus-2.24.0.linux-amd64 prometheus-files
+    6  useradd — no-create-home — shell /bin/false prometheus
+    7  sudo useradd -- no-create-home -- shell /bin/false prometheus
+    8  sudo useradd --no-create-home --shell /bin/false prometheus
+    9  sudo mkdir /etc/prometheus
+   10  sudo mkdir /var/lib/prometheus
+   11  sudo chown prometheus:prometheus /etc/prometheus
+   12  sudo chown prometheus:prometheus /var/lib/prometheus
+   13  sudo cp prometheus-files/prometheus /usr/local/bin/
+   14  sudo cp prometheus-files/promtool /usr/local/bin/
+   15  sudo chown prometheus:prometheus /usr/local/bin/prometheus
+   16  sudo chown prometheus:prometheus /usr/local/bin/promtool
+   17  sudo cp -r prometheus-files/consoles /etc/prometheus
+   18  sudo cp -r prometheus-files/console_libraries /etc/prometheus
+   19  sudo chown -R prometheus:prometheus /etc/prometheus/consoles
+   20  sudo chown -R prometheus:prometheus /etc/prometheus/console_libraries
+   21  sudo vi /etc/prometheus/prometheus.yml
+   22  sudo vi /etc/systemd/system/prometheus.service
+   23  sudo systemctl daemon-reload
+   24  sudo systemctl start prometheus
+   25  sudo systemctl status prometheus
+   26  sudo systemctl enable prometheus
+   27  sudo systemctl status prometheus
+   28  promtool check config /etc/prometheus/prometheus.yml
+   29  vi /etc/prometheus/
+   30  vi /etc/prometheus/prometheus.yml 
+   31  sudo systemctl start prometheus
+   32  sudo systemctl enable prometheus
+   33  sudo systemctl status prometheus
+   34  vi /etc/prometheus/prometheus.yml 
+   35  sudo systemctl enable prometheus
+   36  promtool check config /etc/prometheus/prometheus.yml
+   37  sudo systemctl daemon-reload
+   38  sudo systemctl start prometheus
+   39  sudo systemctl status prometheus
+   40  sudo journalctl -u prometheus.service -b
+   41  promtool check config /etc/prometheus/prometheus.yml
+   42  sudo nano /etc/systemd/system/prometheus.service
+   43  sudo systemctl daemon-reload
+   44  sudo systemctl start prometheus
+   45  sudo systemctl daemon-reload
+   46  sudo systemctl enable prometheus
+   47  sudo systemctl status prometheus
+   48  ls
+   49  history
+   50  history >> history.txt
