@@ -4,7 +4,7 @@
 sudo yum update -y
 
 # Download Prometheus
-wget https://github.com/prometheus/prometheus/releases/download/v2.24.0/prometheus-2.24.0.linux-amd64.tar.gz
+wget https://github.com/prometheus/prometheus/releases/download/v2.54.1/prometheus-2.54.1.linux-amd64.tar.gz
 
 # Extract the downloaded tarball
 tar -xvf prometheus-2.24.0.linux-amd64.tar.gz
