@@ -1,0 +1,77 @@
+[root@ip-172-31-89-14 ~]# history
+    1     wget https://github.com/prometheus/node_exporter/releases/download/v1.6.1/node_exporter-1.6.1.linux-amd64.tar.gz
+    2     tar -xvf node_exporter-1.6.1.linux-amd64.tar.gz
+    3     sudo mv node_exporter-1.6.1.linux-amd64/node_exporter /usr/local/bin/
+    4     sudo nano /etc/systemd/system/node_exporter.service
+    5     sudo systemctl daemon-reload
+    6     sudo systemctl start node_exporter
+    7  sudo systemctl enable node_exporter
+    8  sudo systemctl status node_exporter
+    9  df -h
+   10  yum install grafana
+   11  docker run -it -d name nginx:latest
+   12  docker run --name my-nginx -d -p 80:80  nginx:latest
+   13  docker run --name my-nginx1 -d -p 8080:80  nginx:latest
+   14  ps aux | grep 8080
+   15  docker run --name my-nginx1 -d -p 800:80  nginx:latest
+   16  docker ps
+   17  docker ps -a
+   18  docker stop 14
+   19  docker rm 14
+   20  docker run --name my-nginx1 -d -p 8800:80  nginx:latest
+   21  docker ps
+   22  sudo docker run      --volume=/:/rootfs:ro      --volume=/var/run:/var/run:ro      --volume=/sys:/sys:ro      --volume=/var/lib/docker/:/var/lib/docker:ro      --volume=/dev/disk/:/dev/disk:ro      --publish=8090:8090      --detach=true      --name=cadvisor      --restart=always      gcr.io/cadvisor/cadvisor:latest
+   23  cat /etc/prometheus/prometheus.yml 
+   24  vi /etc/prometheus/prometheus.yml 
+   25  systemctl restart prometheus
+   26  systemctl status prometheus
+   27  yum install grafana
+   28  vi /etc/yum.repos.d/grafana.repo
+   29  sudo yum clean all
+   30  sudo yum makecache
+   31  yum install grafana
+   32  sudo vi /etc/yum.repos.d/grafana.repo
+   33  sudo yum clean all
+   34  sudo yum makecache
+   35  systemctl restart prometheus
+   36  systemctl status prometheus
+   37  yum install grafana
+   38  promtool check config /etc/prometheus/prometheus.yml
+   39  vi /etc/prometheus/prometheus.yml
+   40  promtool check config /etc/prometheus/prometheus.yml
+   41  systemctl restart prometheus
+   42  systemctl status prometheus
+   43  docker ps
+   44  docker stop 5a
+   45  docker rm 5a
+   46  sudo docker run      --volume=/:/rootfs:ro      --volume=/var/run:/var/run:ro      --volume=/sys:/sys:ro      --volume=/var/lib/docker/:/var/lib/docker:ro      --volume=/dev/disk/:/dev/disk:ro      --publish=8090:8080      --detach=true      --name=cadvisor      --restart=always      gcr.io/cadvisor/cadvisor:latest
+   47  docker ps
+   48  sudo nano /etc/yum.repos.d/grafana.repo
+   49  sudo yum install grafana -y
+   50  fallocate -l 1G /swapfile
+   51  chmod 600 /swapfile
+   52  mkswap /swapfile
+   53  swapon /swapfile
+   54  free -h
+   55  df -h
+   56  yum install grafana
+   57  systemctl start grafana
+   58  systemctl enable grafana
+   59  systemctl start grafana-server.service
+   60  systemctl enable  grafana-server.service
+   61  systemctl status grafana-server.service
+   62  docker ps
+   63  sudo systemctl daemon-reload
+   64  df -h
+   65  umount -a /home 
+   66  umount /home 
+   67  df -h
+   68  ls blk
+   69  lsblk
+   70  docker ps
+   71  docker run -d -p 9200:9100 --name=node_exporter prom/node-exporter
+   72  docker ps
+   73  vi /etc/prometheus/prometheus.yml 
+   74  systemctl restart prometheus
+   75  docker ps
+   76  history
