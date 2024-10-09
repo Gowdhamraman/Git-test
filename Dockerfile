@@ -1,11 +1,8 @@
 # Stage 1: Build the React app
-FROM node:18 AS build
+FROM node:alpine
 
 # Set the working directory
-WORKDIR /app
-
-# Copy the package.json and package-lock.json
-COPY package*.json ./
+WORKDIR /build
 
 # Install dependencies
 RUN npm install
