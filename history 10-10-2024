@@ -1,0 +1,153 @@
+[ec2-user@ip-172-31-12-47 ~]$ history
+    1  sudo usermod -a -G docker ec2-user
+    2  docker ps
+    3  docker image ls
+    4  docker compose up -d
+    5  yum install docker compose
+    6  sudo yum install docker compose
+    7  sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    8  sudo chmod +x /usr/local/bin/docker-compose
+    9  docker-compose --version
+   10  sudo rm /usr/local/bin/docker-compose
+   11  DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+   12  mkdir -p $DOCKER_CONFIG/cli-plugins
+   13  curl -SL https://github.com/docker/compose/releases/download/v2.29.6/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
+   14  chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+   15  sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+   16  docker compose version
+   17  docker compose up -d
+   18  cat /var/lib/jenkins/secrets/initialAdminPassword
+   19  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   20  docker compose down
+   21  df -h
+   22  fu -sch *
+   23  du -sch *
+   24  cd build/
+   25  du -sch *
+   26  cd static/
+   27  du -sch *
+   28  cd js/
+   29  du -sch *
+   30  cat main.f1c48542.js.map 
+   31  ls
+   32  cd ..
+   33  ls
+   34  cd ..
+   35  ls
+   36  df -h /tmp
+   37  lsblk
+   38  sudo growpart /dev/xvda1
+   39  sudo growpart /dev/xvda 1
+   40  sudo resize2fs /dev/xvda1
+   41  sudo xfs_growfs /.
+   42  df -h
+   43  sudo growpart /dev/xvda 1
+   44  sudo xfs_growfs /
+   45  df -h
+   46  dmesg | grep -i error
+   47  ls
+   48  mount -o remount,size=2G /tmp/
+   49  sudo -i 
+   50  sudo usermod -aG docker jenkins
+   51  sudo usermod -aG docker ec2-user
+   52  ls -l /var/run/docker.sock
+   53  sudo chmod 666 /var/run/docker.sock
+   54  ls -l /var/run/docker.sock
+   55  sudo systemctl restart docker
+   56  docker ps
+   57  cd project/
+   58  ls
+   59  docker ps
+   60  docker compose up
+   61  newgrp docker
+   62  cd project/
+   63  ls
+   64  docker login
+   65  docker login -u gowdhamr
+   66  docker pull gowdhamr/dev
+   67  docker ps
+   68  docker ps -a
+   69  docker push gowdhamr/dev:latest
+   70  sudo -i
+   71  history
+[ec2-user@ip-172-31-12-47 ~]$ sudo -i
+[root@ip-172-31-12-47 ~]# history
+    1  mount -o remount,size=2G /tmp/
+    2  df -h
+    3  free -h
+    4  yum update -y
+    5  fallocate -l 1G /swapfile
+    6  chmod 600 /swapfile
+    7  mkswap /swapfile
+    8  swapon /swapfile
+    9  df -h
+   10  free -h
+   11  whereis jenkins
+   12  systemctl status jenkins
+   13  cd /usr/share/jenkins/
+   14  s
+   15  ll
+   16  yum uninstall jenkins
+   17  yum remove jenkins
+   18  sudo wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   19  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+   20  sudo dnf upgrade
+   21  # Add required dependencies for the jenkins package
+   22  sudo dnf install fontconfig java-17-openjdk
+   23  sudo dnf install jenkins
+   24  sudo systemctl daemon-reload
+   25  systemctl status jenkins
+   26  sudo systemctl enable jenkins
+   27  sudo systemctl start jenkins
+   28  systemctl status jenkins
+   29  sudo usermod -aG docker jenkins
+   30  sudo systemctl status docker
+   31  user add gowdam
+   32  useradd gowdham
+   33  ls
+   34  cd /home/gowdham/
+   35  ls
+   36  git clone https://github.com/Gowdhamraman/project.git
+   37  cd project
+   38  ls
+   39  touch .env
+   40  vi .env 
+   41  docker build -t ${DOCKER_HUB_REPO_DEV}:latest .
+   42  cat .env 
+   43  echo $DOCKER_HUB_REPO_DEV
+   44  ll
+   45  ls -al
+   46  cat .env 
+   47  docker build -t gowdhamr/dev:latest .
+   48  echo $DOCKER_HUB_REPO_DEV
+   49  source .env
+   50  echo $DOCKER_HUB_REPO_DEV
+   51  echo $DOCKER_HUB_REPO_PROD
+   52  echo $DOCKER_HUB_REPO_DEV
+   53  docker build -t ${DOCKER_HUB_REPO_DEV}:latest .
+   54  docker ps
+   55  docker image ls
+   56  echo "${DOCKER_HUB_PASSWORD}" | docker login --username "${DOCKER_HUB_USERNAME}" --password-stdin
+   57  docker push ${DOCKER_HUB_REPO_DEV}:latest
+   58  docker tag ${DOCKER_HUB_REPO_DEV}:latest ${DOCKER_HUB_REPO_PROD}:latest
+   59  docker push ${DOCKER_HUB_REPO_PROD}:latest
+   60  git checkout dev
+   61  ls
+   62  touch new
+   63  git commit -a 
+   64  git add .
+   65  git commit -m "new files"
+   66  git remote -v
+   67  git push origin dev
+   68  ls
+   69  git push origin dev
+   70  df -h
+   71  ls
+   72  rm new 
+   73  ls
+   74  git add .
+   75  git commit -m "deleted new"
+   76  git status
+   77  git push origin dev
+   78  git status
+   79  history
