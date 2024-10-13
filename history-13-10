@@ -1,0 +1,134 @@
+ubuntu@ip-172-31-5-240:~/project$ history
+    1  sudo apt update
+    2  sudo apt list --upgradable
+    3  apt install docker.io
+    4  apt install git
+    5  sudo apt install docker.io
+    6  sudo apt install git
+    7  sudo apt install jenkins.io
+    8  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+    9  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+   10  sudo apt-get update
+   11  sudo apt-get install jenkins
+   12  sudo systemctl enable docker
+   13  sudo systemctl start docker
+   14  sudo systemctl enable jenkins
+   15  sudo systemctl start jenkins
+   16  sudo usermod -a -G docker ubuntu
+   17  docker version
+   18  sudo usermod -a -G docker ubuntu
+   19  docker version
+   20  sudo systemctl start jenkins
+   21  newgrp docker
+   22  docker version
+   23  sudo systemctl status jenkins.service
+   24  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+   25  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+   26  sudo apt-get update
+   27  sudo apt-get install jenkins
+   28  sudo apt update
+   29  sudo apt install fontconfig openjdk-17-jre
+   30  java -version
+   31  openjdk version "17.0.8" 2023-07-18
+   32  OpenJDK Runtime Environment (build 17.0.8+7-Debian-1deb12u1)
+   33  OpenJDK 64-Bit Server VM (build 17.0.8+7-Debian-1deb12u1, mixed mode, sharing)
+   34  java version
+   35  java -version
+   36  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian/jenkins.io-2023.key
+   37  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+   38  sudo apt-get update
+   39  sudo apt-get install jenkins
+   40  sudo systemctl enable jenkins
+   41  sudo systemctl start jenkins
+   42  sudo systemctl status jenkins
+   43  cat /var/lib/jenkins/secrets/initialAdminPassword
+   44  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   45  docker login
+   46  git clone https://github.com/Gowdhamraman/project.git
+   47  cd project/
+   48  ls
+   49  git checkout dev
+   50  ls
+   51  df -h
+   52  sudo  mount -o remount,size=2G /tmp/
+   53  sudo -i
+   54  git clone https://github.com/Gowdhamraman/project.git
+   55  ps
+   56  docker ps
+   57  ls
+   58  cd project/
+   59  ls
+   60  ./build
+   61  ./build.sh 
+   62  ls
+   63  cat build.sh 
+   64  cat Dockerfile 
+   65  docker compose
+   66  DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+   67  mkdir -p $DOCKER_CONFIG/cli-plugins
+   68  curl -SL https://github.com/docker/compose/releases/download/v2.29.6/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
+   69  chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+   70  sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+   71  docker compose version
+   72  docker compose up -d
+   73  docker ps 
+   74  docker image ls
+   75  ls
+   76  cd project/
+   77  docker compose down
+   78  docker ps
+   79  docker image
+   80  docker image ls
+   81  docker rmi b1
+   82  docker image ls
+   83  docker compose uproot@ip-172-31-5-240:~# history
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    1  df -h
+    2  fallocate -l 1G /swapfile
+    3  chmod 600 /swapfile
+    4  mkswap /swapfile
+    5  swapon /swapfile
+    6  df -h
+    7  free -h
+    8  docker ps
+    9  docker images
+   10  ls
+   11  cd ..
+   12  cd /home/ubuntu/
+   13  ls
+   14  cd project/
+   15  ls
+   16  vi Jenkinsfile
+   17  git status
+   18  git add .
+   19  git commit -m "jenkins updarte 7th"
+   20  git config --global user.name "Gowdhamraman"
+   21  git config --global user.email "gowdham93@gmail.com"
+   22  ls
+   23  git status
+   24  git push
+   25  git pull
+   26  ls
+   27  ll
+   28  git status
+   29  cat Jenkinsfile
+   84  docker compose up -d
+   85  history
+
+
+
