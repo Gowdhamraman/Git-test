@@ -88,7 +88,7 @@ ubuntu@ip-172-31-5-240:~/project$ history
 
 
 
-
+mount -t tmpfs -o size=2G tmpfs /tmp
 
 
 
